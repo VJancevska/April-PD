@@ -1,9 +1,14 @@
+/* General */
+h1, h2, p, nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #696a71;
+}
+
 /* headerblock CSS */   
 
 .HeaderContainer {
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
     padding: 5px;
     margin-left: 50px;
     margin-right: 50px;
@@ -34,3 +39,53 @@ nav {
 
 /* HERO section CSS */
 
+.HeroSection {
+    text-align: center;
+    height: 300px;
+    line-height: 50px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    background: #dadadd;
+}
+
+.HeroSection p, h1 {
+    margin: 0;
+}
+
+.HeroSection h1 {
+    margin-top: 50px;
+}
+
+/* Discounted Products */   
+
+.DiscountedProducts {
+    margin-top: 20px;
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #fcfbfd;
+    border: 2px solid #dadadd;
+}
+
+.DiscProductShowcase {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5px;
+}
+
+figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    margin: 0;
+    width: 350px;
+    height: auto;
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
+}
