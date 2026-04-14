@@ -1,26 +1,28 @@
 /* General */
 h1, h2, p, nav, h2, figcaption {
     font-family: Trebuchet MS;
-    color: #696a71;
+    color: #E6E8E6;
 }
 
 p {
     font-size: 20px;
-    font-weight: thin;
+    font-weight: 300;
     line-height: 1.3;
 }
 
 body {
     overflow-x: hidden;
+    background-color: #191919;
 }
 
 h2 { 
     padding-left: 20px;
+    color: #BB7E8C;
 }
 
 hr {
     border: none;
-    border-top: 3px solid #dadadd;
+    border-top: 3px solid #553A41;
     margin: 10px 20px 10px 20px;
 }
 
@@ -32,14 +34,14 @@ header div {
     padding: 5px;
     margin-left: 50px;
     margin-right: 50px;
-    background: #fcfbfd;
-    border: 2px solid #dadadd;
+    background: #191919;
+    border: 2px solid #553A41;
 }
 
 a { 
     text-decoration: none;
     font-size: 25px;
-    color: black;
+    color: #E6E8E6;
     margin-right: 50px;
 }
 
@@ -48,7 +50,8 @@ a+a {
 }
 
 header img {
-    width: 10%;
+    padding: 5px;
+    width: clamp(50px, 5vw, 80px);
     height: auto;
 }
 
@@ -65,7 +68,9 @@ nav {
     line-height: 50px;
     padding: 20px;
     margin: 20px 50px 0px 50px;
-    background: #dadadd;
+    background-image: url("HeaderBackground.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .HeroSection p, 
@@ -77,13 +82,18 @@ nav {
     margin-top: 40px;
     font-size: 50px;
     line-height: 1.5;
+    color: white;
+}
+
+.HeroSection p {
+    color: #E6E8E6;
 }
 
 .HeroSection button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #696a71;
+    background-color: #3A6EA5;
     color: white;
     border: none;
     cursor: pointer;
@@ -96,8 +106,8 @@ nav {
 .DiscountedProducts {
     margin: 20px 50px 0px 50px;
     padding: 5px;
-    background: #fcfbfd;
-    border: 2px solid #dadadd;
+    background: #000000;
+    border: 2px solid #553A41;
 }
 
 .DiscProductShowcase {
@@ -112,26 +122,25 @@ figure {
     flex-direction: column;
     align-items: center; 
     margin: 20px;
-    border: 1px dotted gray;
-    animation: hoverEffect 0.3s ease-in-out;
 }
 
 figure img {
     width: 100%;
     max-width: 250px;
     height: auto;
+    max-height: 250px;
 }
 
 .OldPrice {
-    color: red;
+    color: #BB7E8C;
     font-size: larger;
-    font-weight: thin;
+    font-weight: 300;
     padding-inline: 10px;
     text-decoration: line-through;
 }
 
 .NewPrice {
-    color: green;
+    color: #E6E8E6;
     font-weight: bolder;
     font-size: xx-large;
 }
@@ -139,6 +148,7 @@ figure img {
 figcaption {
     padding-top: 10px;
     text-align: center;
+    color: #E6E8E6;
 }
 
 section {
@@ -150,8 +160,8 @@ section {
 .NewArrivals {
     padding: 5px;
     margin: 20px 50px 0px 50px;
-    background: #fcfbfd;
-    border: 2px solid #dadadd;
+    background: #000000;
+    border: 2px solid #553A41;
 }
 
 .NewArrivalsShowcase {
@@ -164,11 +174,12 @@ section {
 .ProductCaption {
     font-size: 2rem;
     font-weight: bold;
+    color: #3A6EA5;
 }
 
 .NewArrivalsShowcase figcaption:not(.ProductCaption) {
     font-size: 2rem;
-    color: black;
+    color: #E6E8E6;
     font-weight: bolder;
 }
 
@@ -178,22 +189,22 @@ footer {
     display: flex;
     justify-content: left;
     flex-direction: column;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
     margin: 20px 50px 0px 50px;
-    background: #fcfbfd;
-    border: 2px solid #dadadd;
+    background: #000000;
+    border: 2px solid #553A41;
 }
 
 footer p {
     line-height: 0.5;
     margin-left: 20px;
+    color: #E6E8E6;
 }
 
 #AddressNumber {
     font-weight: bolder;
+    color: #BB7E8C;
 }
-
-/* Footer 2 */
 
 .FooterContainer {
     display: flex;
@@ -201,11 +212,11 @@ footer p {
 }
 
 .Footer2 {
-    background-color: #dadadd;
+    background-color: #191919;
 }
 
 .Footer2 p {
-    color: #696a71;
+    color: #E6E8E6;
 }
 
 /* Animations */
@@ -215,14 +226,14 @@ figure:hover {
 }
 
 a:hover {
-    color: #696a71;
+    color: #BB7E8C;
     transform: scale(1.05);
     transition: color 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #fcfbfd;
-    color: #696a71;
+    background-color: #E6E8E6;
+    color: #553A41;
     transform: scale(1.05);
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
